@@ -1,5 +1,3 @@
-/* Глобальные классы */
-
 body{
 	font-family: "Open Sans", sans-serif;
 	background: url('img/back.jpg') no-repeat;
@@ -13,7 +11,6 @@ body{
 	margin-left: 30px;
 	background-color: #ffffff
 }
-
 p, h1, h2, h3{
 	color: #666666;
 }
@@ -40,28 +37,43 @@ h3{
 	margin: 0px auto;
 }
 
-/* Размеры */
-
-.container{ 
-	width: 1170px; 
-}
-.span12 	{ width: 1170px; }
-.span11 	{ width: 1070px; }
-.span11-in	{ width: 1040px; }
-.span10 	{ width: 970px; }
-.span9 		{ width: 870px; }
-.span8 		{ width: 770px; }
-.span7 		{ width: 670px; }
-.span6 		{ width: 570px; }
-.span5_info	{ width: 445px; }
-.span5 		{ width: 470px; }
-.span4 		{ width: 320px; }
-.span3 		{ width: 270px; }
-.span2 		{ width: 170px; }
-.span1 		{ width: 70px; }
 
 
-/* Стили страницы */
+
+
+
+
+
+
+.container{ width: 1170px; }
+
+.span12 { 	width: 1170px; }
+.span11 { 	width: 1070px; }
+.span11-in{ width: 1040px; }
+.span10 { 	width: 970px; }
+.span9 { 	width: 870px; }
+.span8 { 	width: 770px; }
+.span7 { 	width: 670px; }
+.span6 { 	width: 570px; }
+.span5_info{width: 445px; }
+.span5 { 	width: 470px; }
+.span4 { 	width: 320px; }
+.span3 { 	width: 270px; }
+.span2 { 	width: 170px; }
+.span1 { 	width: 70px; }
+
+.offset12 { margin-left: 1230px; }
+.offset11 { margin-left: 1130px; }
+.offset10 { margin-left: 1030px; }
+.offset9 { 	margin-left: 930px; }
+.offset8 { 	margin-left: 830px; }
+.offset7 { 	margin-left: 730px; }
+.offset6 { 	margin-left: 630px; }
+.offset5 { 	margin-left: 530px; }
+.offset4 { 	margin-left: 430px; }
+.offset3 { 	margin-left: 330px; }
+.offset2 { 	margin-left: 230px; }
+.offset1 { 	margin-left: 130px; }
 
 .bordered{
 	border: 13px solid rgba(158, 158, 158, 0.3);
@@ -71,7 +83,6 @@ h3{
 .about, .photo, .profile, .nomar{
 	margin: 0px;
 }
-
 .about{
 	padding-bottom: 19px;
 }
@@ -110,10 +121,6 @@ h3{
 	margin-left: 0px;
 }
 
-
-/* Скилы */
-
-
 .skillsall{
 	padding-bottom: 20px;
 }
@@ -150,10 +157,6 @@ h3{
 .skilldescription{
 	margin: 4px 0px;
 }
-
-
-/* Работа */
-
 .work{
 	margin-bottom: 25px;
 }
@@ -202,15 +205,12 @@ h3{
 
 
 
-/* Контакты */
+/********CONTACT**************/
   
 form {
     margin: 0;
 }
-#contact{
-	margin-left:0px;
-	position:relative;
-}
+#contact{margin-left:0px;position:relative;}
 .contact_txt{line-height: 1.8em;}
 
 #contact_Form{margin-top:20px;}
@@ -316,28 +316,12 @@ form#contact_form input[type="button"]:hover {
 	background-color: #f57366;
 }
 
-/* Подвал */
 .footer{
 	padding: 10px 0px;
 	font-size: 20px;
 	text-align: center;
 }
-
-/* Для стрелок */
-
-.abouted{
-	position: relative;
-}
-.skillsall{
-	position: relative;
-}
-.experence{
-	position: relative;
-}
-.portfolio{
-	position: relative;
-}
-.contact{
+.element{
 	position: relative;
 }
 
