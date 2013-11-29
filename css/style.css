@@ -1,0 +1,384 @@
+/* Глобальные классы */
+
+body{
+	font-family: "Open Sans", sans-serif;
+	background: url('img/back.jpg') no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 30px;
+	background-color: #ffffff
+}
+
+p, h1, h2, h3{
+	color: #666666;
+}
+
+hr {
+	width: 80%;
+	margin: 15px 0 10px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #fff;
+}
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 5px 0px;
+}
+h3{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 5px 0px;
+}
+.container{
+	margin: 0px auto;
+}
+
+/* Размеры */
+
+.container{ 
+	width: 1170px; 
+}
+.span12 	{ width: 1170px; }
+.span11 	{ width: 1070px; }
+.span11-in	{ width: 1040px; }
+.span10 	{ width: 970px; }
+.span9 		{ width: 870px; }
+.span8 		{ width: 770px; }
+.span7 		{ width: 670px; }
+.span6 		{ width: 570px; }
+.span5_info	{ width: 445px; }
+.span5 		{ width: 470px; }
+.span4 		{ width: 320px; }
+.span3 		{ width: 270px; }
+.span2 		{ width: 170px; }
+.span1 		{ width: 70px; }
+
+
+/* Стили страницы */
+
+.bordered{
+	border: 13px solid rgba(158, 158, 158, 0.3);
+	margin-top: 30px;
+}
+
+.about, .photo, .profile, .nomar{
+	margin: 0px;
+}
+
+.about{
+	padding-bottom: 19px;
+}
+.photo img{
+	width: 96%;
+	border: 10px solid #ffffff;
+}
+.about_txt{
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+.profile{
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.info{
+	font-size: 16px;
+	font-weight: 600;
+	float: left;
+	margin-right: 20px;
+	line-height: 1.1;
+	margin-bottom: 10px;
+}
+.description{
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	color: #4d4d4f;
+	line-height: 20px;
+	margin: 0 0 10px;
+}
+.socio_icon a{
+	display: inline-block;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+
+/* Скилы */
+
+
+.skillsall{
+	padding-bottom: 20px;
+}
+.skills{
+	margin-bottom: 20px;
+}
+.skill{
+	width: 100%;
+}
+.label{
+	padding: 4px;
+	color: #ffffff;
+	border-radius: 1px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 10px;
+	background-color: #999;
+	display: inline-block;
+	margin-right: 5px;
+}
+.progressbar{
+	width: 100%;
+	padding: 10px 0px;
+	position: relative;
+	background-color: #EAEBEB;
+}
+.count{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 10px 0px;
+	background-color: #E74F3F;
+}
+.skilldescription{
+	margin: 4px 0px;
+}
+
+
+/* Работа */
+
+.work{
+	margin-bottom: 25px;
+}
+.workinfo{
+	font-style: italic;
+	color: #E74F3F;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+.workdesc{
+	clear: both;
+}
+
+.portfolio{
+	padding-bottom: 20px;
+}
+.map{
+	height: 400px;
+}
+
+.btn_download {
+	border: 1px solid #E74F3F;
+	background-color: #E74F3F;
+	padding: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn_download:hover {
+	color: #fff;
+	background-color: #f57366;
+}
+
+.text{
+	margin: 15px 0px;
+	font-size: 16px;
+}
+
+
+
+/* Контакты */
+  
+form {
+    margin: 0;
+}
+#contact{
+	margin-left:0px;
+	position:relative;
+}
+.contact_txt{line-height: 1.8em;}
+
+#contact_Form{margin-top:20px;}
+#Info_contact{margin-top:20px;}
+
+form#contact_form .name {
+	padding:10px 0px 0 0px;
+}
+form#contact_form .email {
+	padding-top:10px;
+}
+form#contact_form p {
+	margin-bottom:10px;
+	padding-top:5px;
+	font-style:italic;
+}
+form#contact_form .message {
+	padding-top:10px;
+}
+
+form#contact_form input[type="text"] {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	height: 30px;
+	padding: 0 10px;
+	width: 50%;
+	margin-bottom:20px;
+	color:#333;
+}
+form#contact_form input#email {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	height: 30px;
+	padding: 0 10px;
+	width: 50%;
+	margin-bottom:20px;
+	color:#333;
+}
+form#contact_form .message textarea#message {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	width: 100%;
+	margin-bottom:20px;
+	color:#333;
+	margin-top: 7px;
+}
+form#contact_form label {
+	margin-right: 20px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight:400;
+	color: #333;
+	text-transform: uppercase;
+}
+form#contact_form label span {
+	color:#333;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+form#contact_form input[type="text"]:focus, form#contact_form input[type="text"]:hover, form#contact_form textarea:focus, form#contact_form textarea:hover, form#contact_form input[type="text"]:focus, form#contact_form input[type="text"]:hover, form#contact_form textarea:focus, form#contact_form textarea:hover {
+	background-color:#fff;
+}
+.btn_download
+{
+    border: 1px solid #E74F3F;
+	background-color: #E74F3F;
+	padding:10px;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#fff;
+	margin-bottom:10px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    }
+.btn_download:hover
+{
+    color:#fff;
+	background-color: #f57366;
+    }
+form#contact_form input[type="button"] {
+	border: 1px solid #E74F3F;
+	background-color: #E74F3F;
+	padding:10px;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#fff;
+	margin-bottom:10px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	cursor:pointer;
+}
+form#contact_form input[type="button"]:hover {
+	color:#fff;
+	background-color: #f57366;
+}
+
+/* Подвал */
+.footer{
+	padding: 10px 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Для стрелок */
+
+.abouted{
+	position: relative;
+}
+.skillsall{
+	position: relative;
+}
+.experence{
+	position: relative;
+}
+.portfolio{
+	position: relative;
+}
+.contact{
+	position: relative;
+}
+
+.arrows {
+    left: -60px;
+    overflow: hidden;
+    position: absolute;
+    top: 3px;
+    width: 60px;
+}
+.arrows .top, .arrows .bottom {
+    cursor: pointer;
+    height: 60px;
+    left: 60px;
+    position: relative;
+    -webkit-transition: left 0.3s ease 0s, background-color 0.2s ease 0s;
+	-moz-transition: left 0.3s ease 0s, background-color 0.2s ease 0s;
+	-o-transition: left 0.3s ease 0s, background-color 0.2s ease 0s;
+	-ms-transition: left 0.3s ease 0s, background-color 0.2s ease 0s;
+    transition: left 0.3s ease 0s, background-color 0.2s ease 0s;
+    width: 60px;
+}
+.arrows .top {
+    background:#f57366 url(img/top_arrow.png) no-repeat scroll 50% center;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.arrows .top:hover {
+    background-color: #E74F3F;
+}
+.arrows .bottom {
+    background:#f57366 url(img/bottom_arrow.png) no-repeat scroll 50% center;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.arrows .bottom:hover {
+    background-color: #E74F3F;
+}
