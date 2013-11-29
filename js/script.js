@@ -21,98 +21,26 @@ $(document).ready(function(){
 		});
 	});
 
+	/* Управление отобраением и скрытием стрелок */
 
-	/* Куча пока не оптимизированного кода, который отвечает за отображение стрелок и скролл страницы */
-
-	/* Привести отображение стрелок к 1 функции */
-
-	/* Сделать скролл по поиску следующих или предыдущих элементов */
-
-	$('.abouted').mouseover(function(){
-		$('.to-skillsall', this ).css('left',0);
-	});
-	$('.abouted').mouseout(function(){
-		$('.to-skillsall', this ).css('left',60);
+	$('.element').mouseover(function(){
+		$('.arrows .bottom, .arrows .top ', this).css('left',0);
+	}).mouseout(function(){
+		$('.arrows .bottom, .arrows .top ', this).css('left',60);
 	});
 
+	/* Управление скроллом */
 
-	$('.skillsall').mouseover(function(){
-		$('.to-abouted').css('left',0);
-		$('.to-experence').css('left',0);
-	});
-	$('.skillsall').mouseout(function(){
-		$('.to-abouted').css('left',60);
-		$('.to-experence').css('left',60);
-	});
-	
-	$('.to-abouted').click(function(){
-		var pos = $('.abouted').offset();
+	$('.bottom').click(function(){
 		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
+  			scrollTop: $(this).parents('.element').next().offset().top
+  		}, 800);
 	});
-	$('.to-experence').click(function(){
-		var pos = $('.experence').offset();
+
+	$('.top').click(function(){
 		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
+  			scrollTop: $(this).parents('.element').prev().offset().top
+  		}, 800);
 	});
-
-
-
-
-
-	$('.experence').mouseover(function(){
-		$('.to-skillsall').css('left',0);
-		$('.to-portfolio').css('left',0);
-	});
-	$('.experence').mouseout(function(){
-		$('.to-skillsall').css('left',60);
-		$('.to-portfolio').css('left',60);
-	});
-	$('.to-skillsall').click(function(){
-		var pos = $('.skillsall').offset();
-		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
-	});
-	$('.to-portfolio').click(function(){
-		var pos = $('.portfolio').offset();
-		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
-	});
-
-
-
-
-	$('.portfolio').mouseover(function(){
-		$('.to-experence').css('left',0);
-		$('.to-contact').css('left',0);
-	});
-	$('.portfolio').mouseout(function(){
-		$('.to-experence').css('left',60);
-		$('.to-contact').css('left',60);
-	});
-	$('.to-experence').click(function(){
-		var pos = $('.experence').offset();
-		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
-	});
-	$('.to-contact').click(function(){
-		var pos = $('.contact').offset();
-		$('body,html').animate({
-    		scrollTop: pos.top
-   		}, 800);
-	});
-
-	$('.contact').mouseover(function(){
-		$('.to-portfolio', this ).css('left',0);
-	});
-	$('.contact').mouseout(function(){
-		$('.to-portfolio', this ).css('left',60);
-	});
-
 
 });
